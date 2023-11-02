@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC-bits</title>
+    <style>
+      @keyframes slideInFromRight {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #2c2c2c;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #525050;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 8px 16px;
+        transition: background-color 0.3s;
+      }
+      .navbar a:hover {
+        background-color: #fcfcfc;
+        border-radius: 10px;
+        color: #2c2c2c;
+      }
+      .navbar input {
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        background-color: #333;
+        color: #ffffff;
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .card {
+        background-color: #333;
+        border-radius: 5px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        animation: slideInFromRight 1s ease-out;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .card p {
+        color: #ffffff;
+      }
+      .card p {
+        opacity: 0.7;
+      }
+      button {
+        height: 36px;
+        padding: 11px;
+        border: none;
+        border-radius: 20px;
+        width: 300px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact Us</a>
+      <input type="text" placeholder="Search..." />
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="mouse.png" alt="Product 1" />
+        <h2>Bloody J95S</h2>
+        <p>
+          Bloody gaming mouse gives you the unique advantage of having the fast
+          gaming engine. You can land more killing blows with pinpoint
+          precision.
+        </p>
+        <a
+          href="https://www.bloody.com/en/product.php?pid=10&id=229"
+          target="_blank"
+          ><button>Product Details</button></a
+        >
+        <a
+          href="https://www.czone.com.pk/mouse-a4-tech-mouse-bloody-j95s-gaming-mouse-with-2-fire-rgb-animation-black-activated-pakistan-p.9879.aspx"
+          target="_blank"
+          ><button>Check Availability</button></a
+        >
+      </div>
+      <div class="card">
+        <img src="keyboard.png" alt="Product 2" />
+        <h2>Bloody B975</h2>
+        <p>
+          Innovative LK Optic Switch technology uses optic switch to react at
+          lightning speed with extreme 0.2ms key response, always one step ahead
+          than your enemies, creates more passionate for gamers.
+        </p>
+        <a
+          href="https://www.bloody.com/en/product.php?pid=11&id=162"
+          target="_blank"
+        ></a
+        ><button>Product Details</button>
+        <a
+          href="https://www.czone.com.pk/keyboard-a4-tech-keyboards-bloody-b975-light-strike-rgb-animation-mechanical-gaming-keyboard-orange-libra-switch-pakistan-p.8449.aspx"
+          target="_blank"
+        ></a
+        ><button>Check Availability</button>
+      </div>
+      <div class="card">
+        <img src="headphone.png" alt="Product 3" />
+        <h2>Bloody MR575</h2>
+        <p>
+          A 2.4GHz wireless headphone with 7.1 surround sound, allowing you to
+          keep your head in the game with a paddle headband, and an innovative
+          M.O.C.I. Dome Tech for recreating audio perfectly as it was meant to
+          be.
+        </p>
+        <a
+          href="https://www.bloody.com/en/product.php?pid=12&id=320"
+          target="_blank"
+          ><button>Product Details</button></a
+        >
+        <a
+          href="https://www.czone.com.pk/headsets-headphones-mic-headsets-headphones-bloody-mr575-rgb-gaming-wireless-headset-black-pakistan-p.14899.aspx"
+          target="_blank"
+          ><button>Check Availability</button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
